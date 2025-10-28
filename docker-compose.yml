@@ -1,0 +1,8 @@
+services:
+    bot:
+        build: .
+        container_name: "prayer_bot"
+        restart: always
+        env_file:
+            - .env.dev
+        command: [ "python", "main.py" ]
