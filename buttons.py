@@ -1,6 +1,16 @@
+from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 REGIONS = ["Andijon", "Urganch", "Toshkent"]
+
+
+def admin_btn():
+    keyboards = [
+        [
+            KeyboardButton(text="🫂 Foydalanuvchilar Soni")
+        ]
+    ]
+    return ReplyKeyboardMarkup(keyboard=keyboards, resize_keyboard=True)
 
 
 def region_btn():
